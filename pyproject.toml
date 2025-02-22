@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cron-machine"
+version = "0.1.0"
+description = "Python module with cron runner"
+authors = ["Kirill Sulim <kirillsulim@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "cron_machine", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytz = "^2025.1"
+croniter = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
